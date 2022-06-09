@@ -1,6 +1,12 @@
 {% extends "base.html.jinja" %}
 {% block content %}
     <form action="{{url_for('extract')}}" method="POST">
+
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="kod produktu" aria-label="kod produktu" aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary" type="subbmit" id="button-addon2">Pobierz produkt</button>
+        </div>
+
         <div class="mb-3">
             <label for="product_id" class="for-label">kod produktu</label>
             <input type="text" readonly class="form-control-plaintext" id="product_id" name="product_id" plaeholder="Podaj kod produktu z ceneo.pl">

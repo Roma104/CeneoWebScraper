@@ -1,4 +1,4 @@
-from crypt import methods
+#from crypt import methods
 from app import app
 from flask import render_template, redirect, url_for,request
 import requests
@@ -39,7 +39,7 @@ def index():
 @app.route('/extract', methods=["POST","GET"])
 def extract():
     if request.method =="POST":
-        product_id = request.from.get("product_id")
+        product_id = request.args.get("product_id")
 
 
         url = f"https://www.ceneo.pl/{product_id}#tab=reviews"
