@@ -1,5 +1,4 @@
 # CeneoWebScraper
-# CeneoScraperS11
 
 ## Struktura opinii w serwisie [Ceneo.pl](https:///www.ceneo.pl/)
 
@@ -52,3 +51,5 @@
 - numpy - Służy do analzy danych, głównie operacjach na macierzach.
 - bs4 - Służy do parsowania kodu HTML i XML.
 - flask - Służy do tworzenia aplikacji webowych.
+
+Wciąż poszukuje jak to w tyvh routes zrobić...
