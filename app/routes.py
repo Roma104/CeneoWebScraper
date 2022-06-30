@@ -1,3 +1,6 @@
+from distutils import extension
+import markdown
+from matplotlib.style import library
 from app import app
 from flask import render_template, redirect, url_for, request
 import os
@@ -27,6 +30,11 @@ def products():
 @app.route('/author')
 def author():
     return render_template("author.html.jinja")
+
+def read_me_plik():
+    with open("README.md", "r") as mdfile:
+        readme_html = md.markdown(mdfile.read(), extensions =['markdown.extensions.tables', 'markdown.extensons.fanced_code'] )
+    return render_template("index.html.jinja", libraries=libraries, readme_html=readme_html )
 
 @app.route('/product/<product_id>')
 def product(product_id):

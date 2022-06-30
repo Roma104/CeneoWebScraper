@@ -51,5 +51,4 @@
 - numpy - Służy do analzy danych, głównie operacjach na macierzach.
 - bs4 - Służy do parsowania kodu HTML i XML.
 - flask - Służy do tworzenia aplikacji webowych.
-
-Wciąż poszukuje jak to w tych routes zrobić...
+- Markdown - Służy do konwersji R.Markdown na inne formaty
