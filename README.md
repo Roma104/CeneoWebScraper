@@ -41,6 +41,8 @@
 10. Wyświetlenie analizy danych produktów po podaniu przez użykownika kodu ów produku
 11. Zapisanie poprzednio wyszukiwanych produktów i ich danych na liście na osobnej stronie
 12. Zapisanie poprzednio wyszukiwanych produktów i ich danych w  postaci słownika
+13. Aktualizaja pliku README.md 
+14. Przeniesienie zawartości pliku README.md na stronę w formie zinterpretowanej
 
 
 
@@ -48,7 +50,9 @@
 - requests - Sluży do obsługi HTTP, wysyła żądania i odbiera odpowiedzi.
 - json - Służy do wymiany danych, ich zapiu i odczytu w prosty i przerzysty sposób.
 - pandas - Służy do analizy dnych. Możn je modyfikowa, wczytywać, czyścić, a przede wszystkim właśnie analizwać.
-- numpy - Służy do analzy danych, głównie operacjach na macierzach.
-- bs4 - Służy do parsowania kodu HTML i XML.
+- numpy - Służy do analzy danych, głównie operacjach na macierzach, taki pakiet z obliczeniami naukowymi.
+- bs4 - Służy do iteracji, wyszukiwania i modyfikacji kodu HTML i XML.
 - flask - Służy do tworzenia aplikacji webowych.
-- Markdown - Służy do konwersji R.Markdown na inne formaty
+- Markdown - Służy do konwersji formatu R.Markdown na inne formaty do HTML i XHTML.
+- matplotlib - Służy do tworzenia różnych wykresów, bazujących na podanych danych.
+- flask - Służy do debugowania oraz jest mikro-frameworkiem da Pythona.

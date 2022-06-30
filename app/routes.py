@@ -6,6 +6,7 @@ from flask import render_template, redirect, url_for, request
 import os
 from app.models.product import Product
 
+
 @app.route('/')
 def index():
     return render_template("index.html.jinja")
@@ -33,7 +34,7 @@ def author():
 
 def read_me_plik():
     with open("README.md", "r") as mdfile:
-        readme_html = md.markdown(mdfile.read(), extensions =['markdown.extensions.tables', 'markdown.extensons.fanced_code'] )
+        readme_html=md.markdown(mdfile.read(), extensions=['markdown.extensions.tables', 'markdown.extensons.fanced_code'] )
     return render_template("index.html.jinja", libraries=libraries, readme_html=readme_html )
 
 @app.route('/product/<product_id>')
